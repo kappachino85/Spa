@@ -44,7 +44,6 @@
     <Compile Include="Adapter\DbAdapter.cs" />
     <Compile Include="Adapter\IDbAdapter.cs" />
     <Compile Include="Adapter\IDbCommandDef.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Adapter\DbCommandDef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\Crypto.cs" />
