@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Title</td>
+                <td>Description</td>
+                <td>&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="itm in todos.items">
+                <td>{{itm.title}}</td>
+                <td>{{itm.desc}}</td>
+                <td><button class="btn btn-default" ng-click="todos.edit(itm)">Edit</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

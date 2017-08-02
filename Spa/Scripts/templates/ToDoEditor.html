@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="todoForm">
+        <div class="form-group">
+            <label>To Do Title</label>
+            <input type="text" ng-model="todoEditor.selectedItem.title" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>To Do Description</label>
+            <textarea class="form-control" ng-model="todoEditor.selectedItem.desc" rows="3" cols="30"></textarea>
+        </div>
+        <button class="btn btn-primary" ng-click="todoEditor.save()">Save</button>
+    </form>
+</body>
+</html>

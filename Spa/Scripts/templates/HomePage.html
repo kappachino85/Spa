@@ -1,0 +1,33 @@
+﻿
+    <form>
+        <input type="text" ng-model="as.loginData.userName" placeholder="email" />
+        <input type="password" ng-model="as.loginData.password" placeholder="password" />
+        <button type="button" class="btn btn-default" ng-click="as.login(as.loginData)">Login</button>
+    </form>
+    
+    <p>Don't have an account? <a href="" ng-click="showDiv=true">Click here</a> to register.</p>
+    
+    <div class="registration-form-wrapper" ng-show="showDiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <form id="registration_form">
+                        <h3>Register an account</h3>
+                        <div class="fg-line">
+                            <input type="text" class="input-sm form-control fg-input" ng-model="as.registerUser.firstName" placeholder="First Name">
+                        </div>
+                        <div class="fg-line">
+                            <input type="text" class="input-sm form-control fg-input" ng-model="as.registerUser.lastName"placeholder="Last Name">
+                        </div>
+                        <div class="fg-line">
+                            <input type="text" class="input-sm form-control fg-input" ng-model="as.registerUser.email" placeholder="Email">
+                        </div>
+                        <div class="fg-line">
+                            <input type="password" class="input-sm form-control fg-input" ng-model="as.registerUser.password" placeholder="Password">
+                        </div>
+                        <button type="button" class="btn btn-default" ng-click="as.register(as.registerUser)">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
